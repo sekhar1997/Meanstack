@@ -1,0 +1,18 @@
+<mat-drawer-container class="app-container" autosize>
+  <mat-drawer #drawer class="app-sidenav mat-elevation-z10" mode="side">
+    <mat-toolbar color="primary">
+      <span>DashBoard</span>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="[link.url]" *ngFor="let link of links">
+        {{ link.name }}
+      </a>
+    </mat-nav-list>
+  </mat-drawer>
+  <div class="app-sidenav-content">
+    <app-toolbar (sidenavToggle)="drawer.toggle()"></app-toolbar>
+    <div class="wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</mat-drawer-container>

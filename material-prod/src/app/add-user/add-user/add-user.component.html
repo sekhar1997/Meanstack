@@ -1,0 +1,18 @@
+<mat-card class="cardLayout">
+  {{ this.userForm.value | json }}
+  <form class="example-form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="field-width">
+      <input matInput placeholder=" Name" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field class="field-width">
+      <input matInput placeholder="Email" formControlName="email" />
+    </mat-form-field>
+    <mat-form-field class="field-width">
+      <input matInput placeholder="Number" formControlName="phone" />
+    </mat-form-field>
+    <div class="buttonGroup">
+      <button mat-raised-button type="submit" color="primary">Submit</button>
+      <button mat-raised-button type="reset" color="warn">Cancel</button>
+    </div>
+  </form>
+</mat-card>
