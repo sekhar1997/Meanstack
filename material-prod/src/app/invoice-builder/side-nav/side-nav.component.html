@@ -1,10 +1,28 @@
 <mat-drawer-container class="app-container" autosize>
-  <mat-drawer #drawer class="app-sidenav mat-elevation-z10" mode="side">
-    <mat-toolbar color="primary">
-      <span>DashBoard</span>
+  <mat-drawer
+    #drawer
+    fixedInViewport="true"
+    class="app-sidenav mat-elevation-z10"
+    [mode]="isSmallScreen ? 'over' : 'side'"
+    [opened]="!isSmallScreen"
+  >
+    <mat-toolbar class="tool-bar">
+      <p>
+        <img class="header-icons" src="../../../assets/plane.svg" />
+        <span>BRILLIANT</span>
+      </p>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="[link.url]" *ngFor="let link of links">
+      <a
+        (click)="closeSideNav()"
+        class="list-item"
+        mat-list-item
+        [routerLink]="[link.url]"
+        routerLinkActive="active"
+        routerLinkActiveOptions="{exact:true}"
+        *ngFor="let link of links"
+      >
+        <mat-icon class="icon-lables">{{ link.icon }}</mat-icon>
         {{ link.name }}
       </a>
     </mat-nav-list>

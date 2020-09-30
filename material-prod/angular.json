@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "material-prod"
+    }
+  },
+  "defaultProject": "material-prod",
+  "cli": {
+    "analytics": false
+  }
 }

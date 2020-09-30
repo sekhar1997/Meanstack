@@ -1,5 +1,5 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-invoice-builder',
   templateUrl: './invoice-builder.component.html',

@@ -8,6 +8,8 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgChartjsModule } from 'ng-chartjs';
 
 @NgModule({
   declarations: [MainContentComponent, SideNavComponent, ToolbarComponent],
@@ -16,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     InvoiceBuilderRoutingModule,
     MaterialModule,
     HttpClientModule,
+    FlexLayoutModule,
+    NgChartjsModule,
   ],
   exports: [SideNavComponent],
 })

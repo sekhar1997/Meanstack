@@ -10,7 +10,7 @@ const routes: Routes = [
         (m) => m.InvoiceBuilderModule
       ),
   },
-  { path: '**', redirectTo: 'invoice-builder' },
+  { path: '**', redirectTo: 'invoice-builder/dashboard' },
 ];
 
 @NgModule({

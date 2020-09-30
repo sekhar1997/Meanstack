@@ -1,0 +1,72 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 30vh;
+  padding: 40px;
+  margin: 10px;
+}
+.cards-mob {
+  flex-direction: column;
+  margin: 10px;
+  width: 32vh;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.container-mob {
+  flex-direction: column;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+.card-content {
+  display: flex;
+}
+.charts {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000vh;
+  overflow: auto;
+}
+.chart-images {
+  height: 400px;
+  width: 656px;
+  margin: 20px;
+}
+.number-text {
+  font-size: 34px;
+}
+.shadow-text {
+  color: gray;
+}
+.icon {
+  margin-left: 50px;
+}
+.icon-mob {
+  margin-left: 70px;
+}
+.text-heading {
+  font-size: 40px;
+  margin-right: 20px;
+}
+.text-sub-heading {
+  font-size: 20px;
+  color: gray;
+}
+.text-content {
+  margin: 20px;
+}
+.text-color {
+  color: rgb(12, 67, 129);
+}
+.text-sub-heading-mob {
+  display: flex;
+}
+.router-container {
+  background-color: white;
+  padding: 20px;
+  margin: 30px 0px 30px 20px;
+}

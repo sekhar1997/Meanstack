@@ -1,1 +1,69 @@
-<mat-card>Mean Stack development</mat-card>
+<div class="text-content">
+  <span class="text-heading">Dashboard</span>
+  <span class="text-sub-heading" [ngClass.xs]="['text-sub-heading-mob']"
+    >Welcome John Doe</span
+  >
+</div>
+
+<div class="router-container">
+  <span class="text-color">Home</span> /
+  <span class="text-color">Dashboard</span> / Data
+</div>
+
+<div class="container" [ngClass.xs]="['container-mob']">
+  <mat-card class="cards" [ngClass.xs]="['cards-mob']">
+    <mat-card-content class="card-content">
+      <div class="card-text">
+        <span class="number-text">16,150</span>
+        <span class="shadow-text">DAILY VISITS</span>
+      </div>
+      <div class="icon" [ngClass.xs]="['icon-mob']">
+        <img src="../../../assets/red_eye.png" />
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="cards" [ngClass.xs]="['cards-mob']">
+    <mat-card-content class="card-content">
+      <div class="card-text">
+        <span class="number-text">32,850</span>
+        <span class="shadow-text">SALES</span>
+      </div>
+      <div class="icon" [ngClass.xs]="['icon-mob']">
+        <img src="../../../assets/shopping_cart.png" />
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="cards" [ngClass.xs]="['cards-mob']">
+    <mat-card-content class="card-content">
+      <div class="card-text">
+        <span class="number-text">56,150</span>
+        <span class="shadow-text">COMMENTS</span>
+      </div>
+      <div class="icon" [ngClass.xs]="['icon-mob']">
+        <img src="../../../assets/forum.png" />
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div>
+  <canvas
+    ngChartjs
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [legend]="lineChartLegend"
+    [chartType]="lineChartType"
+    [inlinePlugins]="inlinePlugin"
+  >
+  </canvas>
+  <canvas
+    ngChartjs
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [legend]="lineChartLegend"
+    [chartType]="barChartType"
+    [inlinePlugins]="inlinePlugin"
+  >
+  </canvas>
+</div>
